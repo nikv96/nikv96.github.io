@@ -169,7 +169,7 @@ h2.features-text::after {
 }
 .whatido-text
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	letter-spacing: 5px;
 	margin-bottom:30px;
@@ -182,6 +182,16 @@ h2.whatido-text::after {
     height: 1px;
     background: #8ab839 none repeat scroll 0% 0%;
     content: "";
+}
+
+.skills p{
+	text-align: center;
+	display: block;
+	letter-spacing: 4px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #2E2E2E;
 }
 
 .icon-box{
@@ -380,7 +390,7 @@ $m:1;
 }
 
 .whatido-text-box p {
- 	font-size: 20px;
+ 	font-size: 40px;
  	margin-left: 20%;
  	margin-right: 20%;
     text-align: center;
