@@ -326,7 +326,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.countTo.js"></script>
     <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3l6uhWUmvKGIoGc_xaq4FMHdl9yIFoLc&callback=initialize" async defer></script>
     <script src="js/lightbox.min.js"></script>
     <script>
       function initialize() {
@@ -421,44 +421,5 @@
 	    }
 	});
   	</script>
-  	<!--
-  	<script>
-  	// Hide Header on on scroll down
-		var didScroll;
-		var lastScrollTop = 0;
-		var delta = 2;
-		var navbarHeight = $('header').outerHeight();
-
-		$(window).scroll(function(event){
-		    didScroll = true;
-		});
-
-		setInterval(function() {
-		    if (didScroll) {
-		        hasScrolled();
-		        didScroll = false;
-		    }
-		}, 250);
-
-		function hasScrolled() {
-		    var st = $(this).scrollTop();
-		    
-		    // Make sure they scroll more than delta
-		    if(Math.abs(lastScrollTop - st) <= delta)
-		        return;
-		    
-		    if (st > lastScrollTop && st > navbarHeight){
-		        // Scroll Down
-		        $('header').removeClass('nav-down').addClass('nav-up');
-		    } else {
-		        // Scroll Up
-		        if(st + $(window).height() < $(document).height()) {
-		            $('header').removeClass('nav-up').addClass('nav-down');
-		        }
-		    }
-		    
-		    lastScrollTop = st;
-		}
-  	</script>-->
 </body>
 </html>
