@@ -100,17 +100,20 @@ header.navbar
 	
 }
 .inner h2{
-	font-size: 45px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	font-size: 20px;
 	font-weight: 550;
 	color: #fff;
-	border-bottom: 7px double #fa3447;
+	border-bottom: 0.5px solid rgba(255, 255, 255, .5);
 	line-height: 1.5;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;	
 }
 .inner h3{
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 1;
+	font-size: 15px;
+	font-weight: 200;
+	border-bottom: 0.5px solid rgba(255, 255, 255, .5);
+	line-height: 1.5;
 }
 
 .inner a button{
