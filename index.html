@@ -6,67 +6,229 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Bootstrap 4 CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 	
 	<!-- Custom style sheet -->
-	<link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="stylesheet" href="css/custom.css" type="text/css">
 	
 	<!-- Font awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Bungee|Fira+Sans+Condensed" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="icon" href="images/logo.png" type="image/x-icon">
-
-	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	
-	<!-- Bootstrap 4 JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="icon" href="images/logo_dark.png" type="image/x-icon">
 </head>
 
-<body>
+<body id="page-top">
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"  id="side-navbar">
+	<a class="navbar-brand js-scroll-trigger" id="brand" href="#page-top">
+		<span class="d-block d-lg-none">NV</span>
+		<span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="">
+        </span>
+    </a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
-	<a class="navbar-brand" href="#">
-		<img src="images/logo.png" width="30" height="30" alt="">
-	</a>
-
-	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-		<ul class="navbar-nav mx-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="#about"><img src="images/info.png" width="30" height="30"/></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#portfolio"><img src="images/code.png" width="30" height="30"/></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#resume"><img src="images/user.png" width="30" height="30"/></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact"><img src="images/contact.png" width="30" height="30"/></a>
-			</li>
-		</ul>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav text-uppercase">
+	  <li class="nav-item">
+	    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+	  </li>
+	</ul>
 	</div>
 </nav>
 
-<div class="container-fluid main">
-	<div class="row">
-		<div class="col-12 backg">
-			<div class="col-4 inner">
-				<img src="images/logo.png">
-				<h2>Nikhil Venkatesh</h2>
-				<h3>Software Developer + Robotics Enthusiast</h3>
-			</div>
+<div class="container-fluid p-0">
+	<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+		<div class="my-auto">
+          <h1 class="mb-0">Nikhil
+            <span class="text-primary">Venkatesh</span>
+          </h1>
+          <div class="subheading mb-5">NTU Hall of Residence 8, 26 Nanyang Avenue, 41-1-757, Singapore - 639812  · (65) 8689 7793 ·
+            <a href="mailto:nikv96@gmail.com">nikv96@gmail.com</a>
+          </div>
+          <p class="mb-5">I am a senior in college studying computer science. Originally from India, I now study at Nanyang Technological University in Singapore. In my four years of college, I've experimented with a lot of technology and have now settled to develop robotics solutions. My current area of interest is Deep Learning for Autonomous Robotics. In my spare time, I take part in hackathons and work on some side projects (Check out my Github page :) ).</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://facebook.com/nikv96" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/nikv96" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/venkateshnikhil/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/nikv96" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+	</section>
+
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Engineering Intern</h3>
+              <div class="subheading mb-3">PayPal</div>
+              <p>Developed multiple java based applications for PayPal's core stack. The project involved optimizations of PayPal's functional testing procedures. Worked on an application based on Aspect Oriented Programming to analyze functional metrics of one of the stacks.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2016 - December 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Development Intern</h3>
+              <div class="subheading mb-3">Garuda Robotics</div>
+              <p>Developed Computer Vision and Autonomous Flight Control algorithms for quadcopter drones based on the Pixhawk flight controllers. Developed a real time object detection algorithm using the OpenCV library for computer vision. Built the flight control software for autonomous hovering the drone above a known target using the dronekit-python library.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2016 - July 2016</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Nanyang Technological University</h3>
+              <div class="subheading mb-3">Bachelor of Engineering</div>
+              <div>Computer Science Engineering - Specialization in Intelligent Systenms</div>
+              <p>CGPA: 4.66</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Singapore, August 2014 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Chettinad Vidyashram</h3>
+              <div class="subheading mb-3">Grades 11 and 12</div>
+              <p>Central Board of Secondary Education (India) Score: 96%</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">India, July 2012 - June 2014</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <img src="images/skills/ros.png"/>
+            </li>
+            <li class="list-inline-item">
+              <img src="images/skills/python.svg"/>
+            </li>
+            <li class="list-inline-item">
+              <img src="images/skills/c++.png"/>
+            </li>
+            <li class="list-inline-item">
+              <img src="images/skills/tensorflow.png"/>
+            </li>
+            <li class="list-inline-item">
+              <img src="images/skills/keras.png"/>
+            </li>
+            <li class="list-inline-item">
+              <img src="images/skills/scikit-learn.png"/>
+            </li>
+            <li class="list-inline-item">
+              <img src="images/skills/opencv.png"/>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Areas of Interest</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-arrow-right"></i>
+              Deep Learning</li>
+            <li>
+              <i class="fa-li fa fa-arrow-right"></i>
+              Autonomous Robotics</li>
+            <li>
+              <i class="fa-li fa fa-arrow-right"></i>
+              Computer Vision</li>
+            <li>
+              <i class="fa-li fa fa-arrow-right"></i>
+              Navigation Algorithms</li>
+          </ul>
+        </div>
+      </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+		  <h2 class="mb-5">Hobbies &amp; Interests</h2>
+		  <p>I am an avid soccer fan. My favorite club is Chelsea F.C. I follow all their games. In my spare time, I play some soccer and badminton. I also enjoy swimming from time to time. As a young boy, I grew up eating a lot, so to this day I haven't lost an ounce of the appetite. I read the occassional book and watch too many TV shows for my own good. My current favorites are Game of Thrones, Sherlock and Brooklyn Nine-nine but all time favorite has to be F.R.I.E.N.D.S. Within Singapore, I tend to attend a lot of tech related events and talks and keep myself up to date with the on-going trends. I enjoy networking at such events. One of my most useful sources has been <a href="http://thelist.sg" target="_blank" style="color:gray">http://thelist.sg</a> if any one wants to attend events as well.</p>
 		</div>
-	</div>
+	</section>
 </div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/custom.js"></script>
+
+
 </body>
 </html>
