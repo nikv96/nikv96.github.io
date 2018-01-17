@@ -23,6 +23,8 @@
 
 <body id="page-top">
 
+<div class="se-pre-con"></div>
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"  id="side-navbar">
 	<a class="navbar-brand js-scroll-trigger" id="brand" href="#page-top">
@@ -237,6 +239,11 @@
 <!-- Custom scripts for this template -->
 <script src="js/custom.js"></script>
 
+<script>
+        $(window).on("load", function() {
+	   $(".se-pre-con").fadeOut("slow");
+	});
+</script>
 
 </body>
 </html>
